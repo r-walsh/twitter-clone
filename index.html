@@ -17,20 +17,16 @@
 				</div>
 				<div id="tweet-content">
 
-					<!-- STEP 2: When the user clicks on the textarea, the textarea should double in size and the character count and Tweet buttons should be revealed. -->
-					<!-- HINT: jQuery ".on" eventHandler -->
-					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
 
-					<!-- STEP 1: Initially, the Tweet button and the character count button below should be hidden. -->
-					<!-- HINT: Use CSS -->
+					<textarea id="not-reply" class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
+
+
 					<div id="tweet-controls">
 
-						<!-- STEP 3: As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
-						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
+
 						<div id="char-count">140</div>
 
-						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
-						<!-- HINT: javascript length method -->
+
 						<button class="button" id="tweet-submit">Tweet</button>
 					</div>
 				</div>
@@ -178,5 +174,51 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+
+		<div class="tweet" id='reference-tweet'>
+						<div class="content">
+							<img class="avatar" src="img/alagoon.jpg" />
+							<strong class="fullname">Alagoon</strong>
+							<span class="username">@alagoon</span>
+
+							<p class="tweet-text" id="my-tweet"></p>
+
+							<div class="tweet-actions">
+								<ul>
+									<li><span class="icon action-reply"></span> Reply</li>
+									<li><span class="icon action-retweet"></span> Retweet</li>
+									<li><span class="icon action-favorite"></span> Favorite</li>
+									<li><span class="icon action-more"></span> More</li>
+								</ul>
+							</div>
+
+							<div class="stats">
+								<div class="retweets">
+									<p class="num-retweets">0</p>
+									<p>RETWEETS</p>
+								</div>
+								<div class="favorites">
+									<p class="num-favorites">0</p>
+									<p>FAVORITES</p>
+								</div>
+								<div class="users-interact">
+									<div>
+
+									</div>
+								</div>
+
+								<div class="time" id='my-tweet-time'>
+									
+								</div>
+							</div>
+							<div class="reply">
+								<img class="avatar" src="img/alagoon.jpg" />
+								<textarea class="tweet-compose" placeholder="Reply to @alagoon"/></textarea>
+							</div>
+						</div>
+					</div>
+
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>
