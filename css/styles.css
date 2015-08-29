@@ -170,9 +170,11 @@ body {
 	.tweet-actions {
 		text-align: right;
 	}
+
 		.tweet-actions ul {
 			list-style-type: none;
 		}
+
 			.tweet-actions li {
 				display: inline-block;
 				font-size: 12px;

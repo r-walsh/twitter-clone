@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+// $('.tweet-actions').hide();
+
 $('#not-reply').on('click', function(event) {
 	event.stopPropagation();
 
@@ -47,6 +49,15 @@ $('#tweet-submit').on('click', function(e) {
 	lotsOfHTML.show();
 
 });
+
+$('.tweet').mouseenter(function() {
+	$('.tweet-actions').show();
+
+});
+
+$('.tweet').mouseleave(function() {
+	$('.tweet-actions').hide();
+})
 
 function formatDate() {
 	var monthNames = [
