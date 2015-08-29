@@ -149,6 +149,15 @@ body {
 	border-radius: 6px;
 }
 
+.tweet:hover .tweet-actions li {
+	color: #2FC2EF;
+}
+
+.tweet:hover .icon {
+	color: #2FC2EF;
+	background-color: #2FC2EF;
+}
+
 	.tweet .avatar {
 		float: left;
 		margin-right: 10px;
@@ -178,14 +187,14 @@ body {
 			.tweet-actions li {
 				display: inline-block;
 				font-size: 12px;
-				color: #2FC2EF;
+				color: #fff;
 				cursor: pointer;
 				margin-right: 2px;
 			}
 
 	.icon {
-		color: #2FC2EF;
-		background-color: #2FC2EF;
+		color: #fff;
+		background-color: #fff;
 		width: 12px;
 		height: 13px;
 		display: inline-block;
@@ -214,6 +223,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
