@@ -29,6 +29,12 @@ $('#not-reply').on('keyup', function() {
 		$('#char-count').css('color', '#999');
 	} else if (count <= 10) {
 		$('#char-count').css('color', 'red');
+	} else if (count > 0) {
+		$('#char-count').attr('disabled', false);
+	}
+
+	if (count >= 0 && count !== 140) {
+		$('#tweet-submit').attr('disabled', false);
 	}
 
 });
